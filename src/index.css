@@ -1,0 +1,148 @@
+body {
+  background-color: #FF6C00;
+  padding: 20px;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #1d0277;
+  padding: 0;
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #ece993;
+  padding:  20px 20px 20px 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+/* CUERPO DEL CONTENT*/
+section {
+  width: 79%;
+  background: rgb(141, 31, 31);
+  float: left;
+  overflow: auto;
+  padding-bottom: 60px;
+  padding-top:30px;
+}
+
+aside {
+  float: right;
+  border: 1px solid red;
+  width: 19%;
+  border: 1px solid red;
+  /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
+  /*visibility: hidden;*/
+}
+footer {
+  position: relative;
+  margin-top: -50px;
+  height: 40px; 
+  padding:5px 0px;
+  clear: both;
+  background: #286af0;
+  text-align: center;
+  color: #fff;
+}
+
+
+/*DISEÑO FORMULARIO*/
+
+form {
+  display: inline-block;
+  text-align: center;
+}
+.container{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+label {
+  display: block;
+  margin: .5em 0 0 0;
+}
+input[type=text] {
+
+  border-radius: 4px;
+  margin-left:auto;
+margin-right:auto;
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+#divContenedor {
+  position:relative;
+ height:124px;
+ width:340px;
+ margin:0 auto;
+ background-color:blue;
+}
+#divTitulo, #lbl1, #txt1, #lbl2, #txt2, #btnSubmit {
+  position:absolute;
+}
+#divTitulo {
+ height:16px;
+ width:340px;
+ color:yellow;
+ text-align:center;
+ font-weight:bold;
+ background-color:red;
+}
+#lbl1, #lbl2 {
+ width:70px;
+ background-color:lightgray;
+}
+#txt1, #txt2 {
+ width:200px;
+ border:1px solid black;
+}
+#lbl1 {
+ top:33px;
+ left:30px;
+}
+#txt1 {
+ top:30px;
+ left:104px;
+}
+#lbl2 {
+ top:63px;
+ left:30px;
+}
+#txt2 {
+ top:60px;
+ left:104px;
+}
+#btnSubmit {
+ width:110px;
+ top:90px;
+ left:120px;
+ cursor:pointer;
+}
+
