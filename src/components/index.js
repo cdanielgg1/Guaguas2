@@ -20,7 +20,7 @@ const theme = createMuiTheme({
 	
   });
 
-  const App = () => {
+export default function App() {
 
 	const [firebaseInitialized, setFirebaseInitialized] = useState(false)
 
@@ -29,7 +29,6 @@ const theme = createMuiTheme({
 			setFirebaseInitialized(val)
 		})
 	})
-	
 
 
 	return firebaseInitialized !== false ? (
@@ -46,4 +45,3 @@ const theme = createMuiTheme({
 		</MuiThemeProvider>
 	) : <div id="loader"><CircularProgress /></div>
 }
-export default App

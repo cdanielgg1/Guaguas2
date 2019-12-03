@@ -1,29 +1,28 @@
-import React from "react";
+import React,{useState} from 'react';
 
-const Select = props => {
-  return (
-    <div className="form-group">
-      <label for={props.name}> {props.title} </label>
-      <select
-        id={props.name}
-        name={props.name}
-        value={props.value}
-        onChange={props.handleChange}
-        className="form-control"
-      >
-        <option value="" disabled>
-          {props.placeholder}
-        </option>
-        {props.options.map(option => {
-          return (
-            <option key={option} value={option} label={option}>
-              {option}
-            </option>
-          );
-        })}
-      </select>
-    </div>
-  );
-};
+function Select() {
+    //initial value set to react
+ const [framework,setFramework] = useState('react');
 
+ function handleChange(e){
+    setFramework(e.target.value);
+ };
+
+  function handleSubmit(e){
+    e.preventDefault();
+    console.log(framework);
+  };
+
+    return (
+      <form onSubmit={handleSubmit}>
+        <h2>Choose your framework</h2>
+        <select onChange={handleChange} value={framework}>
+          <option value="react">React</option>
+          <option value="angular">Angular</option>
+          <option value="vue">Vue</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    );
+}
 export default Select;

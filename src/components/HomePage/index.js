@@ -4,7 +4,10 @@ import VerifiedUserOutlined from '@material-ui/icons/VerifiedUserOutlined'
 import withStyles from '@material-ui/core/styles/withStyles'
 import { Link } from 'react-router-dom'
 
+
 import Grid from '@material-ui/core/Grid';
+import logo from '../logo.jpg';
+
 
 const styles = theme => ({
 	main: {
@@ -27,8 +30,11 @@ const styles = theme => ({
 		padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
 	},
 	avatar: {
-		width: 150,
+		width: 'auto',
+		height: 'auto',
+		display:'block',
 		margin: theme.spacing.unit,
+	
 		backgroundColor: theme.palette.secondary.main,
 	},
 	submit: {
@@ -43,7 +49,8 @@ function HomePage(props) {
 		<main className={classes.main}>
 			<Paper className={classes.paper}>
 			<Grid container justify="center" alignItems="center">
-				<Avatar className={classes.avatar}>Guaguas
+			<Avatar img src={logo}
+				className={classes.avatar}>
 					<VerifiedUserOutlined />
 				</Avatar>
 				</Grid>

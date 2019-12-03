@@ -4,6 +4,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
 import withStyles from '@material-ui/core/styles/withStyles'
 import { Link, withRouter } from 'react-router-dom'
 import firebase from '../firebase'
+import logo from '../logo.jpg';
 const styles = theme => ({
 	main: {
 		width: 'auto',
@@ -47,7 +48,8 @@ function Register(props) {
 	return (
 		<main className={classes.main}>
 			<Paper className={classes.paper}>
-				<Avatar className={classes.avatar}>
+			<Avatar img src={logo}
+				className={classes.avatar}>
 					<LockOutlinedIcon />
 				</Avatar>
 				<Typography component="h1" variant="h5">
