@@ -71,7 +71,7 @@ function HomePage(props) {
 					type="submit"
 					fullWidth
 					variant="contained"
-					color="secondary"
+					color="primary"
 					component={Link}
 					to="/login"
 					className={classes.submit}>

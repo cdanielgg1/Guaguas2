@@ -30,8 +30,6 @@ const theme = createMuiTheme({
 		})
 	})
 	
-
-
 	return firebaseInitialized !== false ? (
 		<MuiThemeProvider theme={theme}>
 			<CssBaseline />

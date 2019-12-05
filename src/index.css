@@ -641,12 +641,12 @@ dd {
   border-radius: 4px;
   background: #0366EE;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 300;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   text-transform: none;
-  padding: .75rem 1.25rem;
-  margin: 0 0 .5rem 0;
+  padding: .75rem 2.25rem;
+  margin: 1rem 2rem 1.5rem 1rem;
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
@@ -712,11 +712,11 @@ a.full-button {
   =============== */
 [type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea {
   display: block;
-  border: 1px solid #cdcdcd;
+  border: 2px solid #cdcdcd;
   border-radius: 4px;
   padding: .75rem;
   outline: none;
-  background: transparent;
+  background: white;
   margin-bottom: .5rem;
   font-size: 1rem;
   
@@ -731,10 +731,13 @@ a.full-button {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #8cbcfe; }
 
 textarea {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
   overflow: auto;
   height: auto; 
 width : 250px;
-height : 250px;
+height : 350px;
 }
 
 fieldset {
@@ -766,7 +769,9 @@ label {
   font-weight: 600;
   max-width: 100%;
   display: block;
-  text-align:left;
+  text-align:center;
+  float:left;
+  width:25%;
   margin: 1rem 0 .5rem; }
 
 @media (min-width: 600px) {
@@ -814,7 +819,7 @@ td {
 th,
 td {
   text-align: left;
-  padding: .5rem; }
+  padding: 1.5rem; }
 
 caption {
   padding: 1rem 0;

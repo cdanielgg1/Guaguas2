@@ -56,6 +56,7 @@ const initialState = {
   conductoresToBeLoaded: []
 }
 
+
 function reducer(state, action) {
   switch (action.type) {
     case POPULATE_STATE:
@@ -91,7 +92,7 @@ export default function SelectConductor() {
         options={data.grupos}
         onChange={e => {
           dispatch({ type: POPULATE_STATE, grupo: e.value })
-          //props.onChange(e)
+          
         }}
       />
 

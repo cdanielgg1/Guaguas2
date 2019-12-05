@@ -57,11 +57,11 @@ function Register(props) {
        			</Typography>
 				<form className={classes.form} onSubmit={e => e.preventDefault() && false }>
 					<FormControl margin="normal" required fullWidth>
-						<InputLabel htmlFor="name">Name</InputLabel>
+						<InputLabel htmlFor="name">Nombre</InputLabel>
 						<Input id="name" name="name" autoComplete="off" autoFocus value={name} onChange={e => setName(e.target.value)} />
 					</FormControl>
 					<FormControl margin="normal" required fullWidth>
-						<InputLabel htmlFor="email">Email Address</InputLabel>
+						<InputLabel htmlFor="email">Email</InputLabel>
 						<Input id="email" name="email" autoComplete="off" value={email} onChange={e => setEmail(e.target.value)}  />
 					</FormControl>
 					<FormControl margin="normal" required fullWidth>
@@ -80,7 +80,7 @@ function Register(props) {
 						color="primary"
 						onClick={onRegister}
 						className={classes.submit}>
-						Register
+						Registro
           			</Button>
 
 					<Button
@@ -91,7 +91,7 @@ function Register(props) {
 						component={Link}
 						to="/login"
 						className={classes.submit}>
-						Go back to Login
+						volver atras
           			</Button>
 				</form>
 			</Paper>

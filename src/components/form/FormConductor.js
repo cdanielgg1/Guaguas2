@@ -6,7 +6,7 @@ import UserTable from '../tables/UserTable'
 const App = () => {
 		// Data
 		const usersData = [
-			{ id: 1, name: 'Carlos', username: 'garcia',SelectConductor: '127', select:'1', mensaje: 'hola que tal' },
+			{ id: 1, name: 'Carlo', username: 'garcia',SelectConductor: '127', select:'1', mensaje: 'hola que talaaaaaaaaaaaaaaaaaaaa' },
 			{ id: 2, name: 'Craig', username: 'siliconeidolon',SelectConductor: '131', select:'1',  mensaje: 'bienvenido' },
 			{ id: 2, name: 'Craig', username: 'siliconeidolon',SelectConductor: '137', select:'',  mensaje: 'bienvenido' },
 		]
@@ -60,13 +60,13 @@ const App = () => {
 							</Fragment>
 						) : (
 							<Fragment>
-								<h2>Agregar envio</h2>
+								
 								<AddUserForm addUser={addUser} />
 							</Fragment>
 						)}
 					</div>
 					<div className="flex-large">
-						<h2>Ver mensajes</h2>
+						
 						<UserTable users={users} editRow={editRow} deleteUser={deleteUser} />
 					</div>
 				</div>

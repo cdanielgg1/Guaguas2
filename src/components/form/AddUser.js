@@ -13,7 +13,7 @@ const AddUser = () => {
   return (
     <>
       <hr />
-      <h3>Add new user:</h3>
+      <h3>Agrega nuevo usuario:</h3>
       <input
         type="text"
         value={userName}
@@ -27,7 +27,7 @@ const AddUser = () => {
         onClick={() => addNewUser(userName)}
         disabled={!userName}
       >
-        Add
+        Agregar
       </button>
     </>
   );

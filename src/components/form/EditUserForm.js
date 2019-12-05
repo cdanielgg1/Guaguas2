@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SelectConductor from '../SelectConductor'
 
 const EditUserForm = props => {
   const [ user, setUser ] = useState(props.currentUser)
@@ -29,6 +30,39 @@ const EditUserForm = props => {
       <input type="text" name="name" value={user.name} onChange={handleInputChange} />
       <label>Usuario</label>
       <input type="text" name="username" value={user.username} onChange={handleInputChange} />
+
+      <SelectConductor
+				 name="SelectConductor"
+				  value={user.SelectConductor}
+				   onChange={handleInputChange}
+        />
+	
+  
+			<label>
+          Seleccione grupo:
+		  <select
+		  
+			 name= "select"
+			  value={user.select} 
+			  onChange ={handleInputChange}>
+			  
+			  <optgroup label="Grupo1">
+			
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+			</optgroup>
+			<optgroup label="Grupo2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+			</optgroup>
+
+          </select>
+        </label>
+
       <button>Actualizar</button>
       <button onClick={() => props.setEditing(false)} className="button muted-button">
         Cancelar

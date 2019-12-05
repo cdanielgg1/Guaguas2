@@ -52,7 +52,7 @@ function SignIn(props) {
 					<LockOutlinedIcon />
 				</Avatar>
 				<Typography component="h1" variant="h5">
-					Login
+					Acceso a web
        			</Typography>
 				<form className={classes.form} onSubmit={e => e.preventDefault() && false}>
 					<FormControl margin="normal" required fullWidth>
@@ -70,7 +70,7 @@ function SignIn(props) {
 						color="primary"
 						onClick={login}
 						className={classes.submit}>
-						Login
+						Acceso
           			</Button>
 					<Button
 						type="submit"

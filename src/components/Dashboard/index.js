@@ -2,16 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { Typography, Paper, Avatar, CircularProgress, Button } from '@material-ui/core'
 import AppBar from '@material-ui/core/AppBar';
 //import { Container } from 'semantic-ui-react';
+import logo from '../logo.jpg';
 
 import VerifiedUserOutlined from '@material-ui/icons/VerifiedUserOutlined'
 import withStyles from '@material-ui/core/styles/withStyles'
 import firebase from '../firebase'
 
-
-
-
 import NavBar from '../navBar';
-
 
 import { withRouter } from 'react-router-dom'
 	;
@@ -90,7 +87,7 @@ function Dashboard(props) {
 				
 			</AppBar> 
 			<Paper className={classes.paper}>
-				<Avatar className={classes.avatar}>
+				<Avatar img src={logo} className={classes.avatar}>
 					<VerifiedUserOutlined />
 				</Avatar>
 				<Typography component="h1" variant="h5">

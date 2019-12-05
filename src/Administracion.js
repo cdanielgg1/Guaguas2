@@ -1,19 +1,20 @@
 import React, { Component } from "react";   
-import FormConductor from './components/form/FormConductor';
+import FormAdministracion from './components/form/FormAdministracion';
 
 
    
-class Conductor extends Component {   
+class Administracion extends Component {   
   render() {   
     return (   
       <div>   
           <section> 
       
-      <FormConductor />
+      <FormAdministracion />
        </section>
       
         <footer>
-                <a href="">salir</a>
+               
+               
         </footer>
         
       </div>   
@@ -21,4 +22,4 @@ class Conductor extends Component {
   }   
 }   
    
-export default Conductor;
+export default Administracion;

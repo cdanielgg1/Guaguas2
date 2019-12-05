@@ -13,7 +13,7 @@ class Conductor extends Component {
        </section>
       
         <footer>
-                <a href="">salir</a>
+               
         </footer>
         
       </div>   

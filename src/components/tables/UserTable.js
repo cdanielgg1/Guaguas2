@@ -1,6 +1,7 @@
 import React from 'react'
 
 
+
 const UserTable = props => (
     <span className="border border-primary">
   <table>
@@ -11,7 +12,7 @@ const UserTable = props => (
         <th>Conductor</th>
         <th>Grupo</th>
          <th>Mensaje</th>
-             <th>Actions</th>
+             <th>opciones</th>
       </tr>
     </thead>
     
@@ -22,7 +23,7 @@ const UserTable = props => (
           <tr key={user.id}>
             <td>{user.name}</td>
             <td>{user.username}</td>
-            <td>{user.SelectConductor}</td>
+            <td>{UserTable.SelectConductor}</td>
             <td>{user.select}</td>
             <td>{user.mensaje}</td>
             <td>
