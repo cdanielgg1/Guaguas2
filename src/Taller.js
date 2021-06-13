@@ -40,7 +40,7 @@ const App = () => (
       <label>mensaje</label>
     <textarea type="text" row ="10" columns = "50" name="mensaje" />
     
-    <input type="submit" value="Guardar" class="btn btn-primary" tabindex="7"
+    <input type="submit" value="Enviar" class="btn btn-primary" tabindex="7"
                 title="Guardar datos ingresados"></input>
 
     </form>

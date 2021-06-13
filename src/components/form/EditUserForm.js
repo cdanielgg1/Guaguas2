@@ -64,6 +64,8 @@ const EditUserForm = props => {
         </label>
 
       <button>Actualizar</button>
+      <label>Mensaje</label>
+			<textarea type="text" row ="10" columns = "50" name="mensaje" value={user.textarea} onChange ={handleInputChange} />
       <button onClick={() => props.setEditing(false)} className="button muted-button">
         Cancelar
       </button>
